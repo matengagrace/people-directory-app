@@ -39,7 +39,7 @@ function UserDetail() {
 
   useEffect(() => {
     userDetail();
-  }, []);
+  }, [user]);
 
   console.log(user);
 
@@ -72,3 +72,5 @@ function UserDetail() {
 }
 
 export default UserDetail;
+
+

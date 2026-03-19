@@ -5,28 +5,26 @@ import UserCard from "../components/UserCard";
 
 function Home() {
   const [users, setUsers] = useState([]);
+  const [searchUser,setSearchUser] = useState('');
 
   useEffect(() => {
     setUsers(data);
   }, []);
 
-  const recherche = (term) => {
-    const results = users.filter(
+    const userFiltered = users.filter(
       (user) =>
-        user.name.toLowerCase().includes(term.toLowerCase()) ||
-        user.email.toLowerCase().includes(term.toLowerCase())
+        user.name.toLowerCase().includes(searchUser.toLowerCase()) ||
+        user.email.toLowerCase().includes(searchUser.toLowerCase())
     );
-    setUsers(results);
-  };
 
   return (
     <div className="main-container">
       <h2>Liste des Utilisateurs</h2>
-      <SearchBar onSearch={recherche} />
+      <SearchBar setSearchUser={setSearchUser} />
 
       <div className="user-list">
-        {users.map((user, index) => (
-          <UserCard user={user}  index={index}/>
+        {userFiltered.map((user) => (
+          <UserCard key={user.id} user={user} />
         ))}
        
       </div>

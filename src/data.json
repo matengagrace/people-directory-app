@@ -61,5 +61,26 @@
         "email": "kaneza@gmail.com",
         "telephone": "65220125",
         "photo": "profil9.jpg"
+    },
+    {
+        "id":10,
+        "name": "Mukunde ange",
+        "email": "mukunde@gmail.com",
+        "telephone": "62220120",
+        "photo": "profil11.jpg"
+    },
+    {
+        "id":11,
+        "name": "Nduwayo Danny",
+        "email": "nduwayo@gmail.com",
+        "telephone": "65220125",
+        "photo": "profil12.jpg"
+    },
+    {
+        "id":12,
+        "name": "Irutavyose Bella",
+        "email": "irutavyose@gmail.com",
+        "telephone": "65220125",
+        "photo": "profil13.jpg"
     }
 ]

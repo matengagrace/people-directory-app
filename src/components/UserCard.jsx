@@ -12,7 +12,7 @@ function UserCard({user}) {
         </div>
         <h4>{user.name}</h4>
         <p>{user.email}</p>  
-        <button onClick={()=>navigate(`/user-detail/${user.id}`)}>afficher</button>
+        <button onClick={()=>navigate(`/user-detail/${user.id}`)}>Afficher</button>
     </div>
   )
 }

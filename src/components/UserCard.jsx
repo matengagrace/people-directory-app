@@ -6,7 +6,7 @@ function UserCard({user}) {
     const navigate = useNavigate();
 
   return (
-    <div className='w-[150px] h-[180px] rounded-2xl p-1 bg-[#9e9999] gap-1 grid grid-cols-1 items-center justify-start'>
+    <div className='w-[150px] h-[180px] rounded-2xl p-1 bg-[#9e9999] gap-1 grid grid-cols-1 items-center justify-start shadow-[0_0_4px_2px_rgb(44,42,42)] transition-all duration-1000 hover:scale-110'>
         <div className="w-[80px] h-[80px] mx-auto rounded-full overflow-hidden">
             <img src={`/images/${user.photo}`} alt="user profil" className='w-full' />
         </div>

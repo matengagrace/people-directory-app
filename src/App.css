@@ -2,12 +2,12 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-color: rgb(213, 213, 213);
+  background-color: #d5d5d5;
 }
 
 /* partie de navbar*/
 .nav-container {
-  background-color: rgb(54, 54, 246);
+  background-color: #3636f6;
   width: 100%;
   height: 70px;
   color: white;
@@ -70,7 +70,7 @@
   width: inherit;
   border-radius: 30px;
   padding-left: 20px;
-  background-color: rgb(155, 153, 153);
+  background-color: #9b9999;
   border: none;
   outline: none;
   height: 25px;
@@ -96,7 +96,7 @@
   height: 180px;
   border-radius: 20px;
   padding: 5px;
-  background-color: rgb(158, 153, 153);
+  background-color: #9e9999;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@
 }
 .user-card p {
   font-size: 12px;
-  color: rgb(44, 42, 42);
+  color: #2c2a2a;
 }
 
 .user-card button {
@@ -156,7 +156,7 @@
   height: 60vh;
   border-radius: 20px;
   padding: 5px;
-  background-color: rgb(158, 153, 153);
+  background-color: #9e9999;
   display: flex;
   align-items: center;
   justify-content: start;

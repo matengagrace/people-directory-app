@@ -18,9 +18,9 @@ function UserDetail() {
   }
 
   return (
-    <div className="detail-container">
-      <div className="retour">
-        <button
+    <div className="w-[80%] grid grid-cols-1 justify-center items-center mx-auto">
+      <div className="w-full h-[40px] mt-[30px]">
+        <button className="bg-black text-white py-1 px-[14px] outline-0 border-0 rounded-[10px] cursor-pointer text-[14px]"
           onClick={() => {
             navigate("/");
           }}
@@ -28,16 +28,16 @@ function UserDetail() {
           Retour
         </button>
       </div>
-      <h1>Details de l'utilisateur</h1>
+      <h1 className="my-5 mx-auto text-[30px] font-bold">Details de l'utilisateur</h1>
 
-      <div className="user-detail">
-        <div className="photo-detail">
-          <img src={`/images/${user.photo}`} alt="user profil" />
+      <div className="w-full lg:w-[60%] h-[60vh] rounded-[20px] p-5 md:p-1.5 bg-[#9e9999] grid items-center justify-start md:gap-5 mx-auto md:w-[80%] md:flex lg:w-[60%] ">
+        <div className="w-[300px] h-[300px] ml-[25px] rounded-[30px] overflow-hidden">
+          <img src={`/images/${user.photo}`} alt="user profil" className="w-full" />
         </div>
-        <div className="detail-infos">
-          <h4>{user.name}</h4>
-          <p>{user.email}</p>
-          <p>{user.telephone}</p>
+        <div className="grid items-center text-center md:text-left">
+          <h4 className="text-[25px] font-bold lg:text-[30px]">{user.name}</h4>
+          <p className="font-[20px]">{user.email}</p>
+          <p className="font-[20px]">{user.telephone}</p>
         </div>
       </div>
     </div>

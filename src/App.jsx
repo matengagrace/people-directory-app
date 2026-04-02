@@ -1,6 +1,5 @@
 import React from 'react'
 import Home from './pages/Home'
-import './App.css'
 import { Route, Routes } from 'react-router'
 import UserDetail from './components/UserDetail'
 import Navbar from './components/Navbar'
@@ -8,7 +7,7 @@ import Navbar from './components/Navbar'
 function App() {
 
   return (
-    <div  className="container">
+    <div  className="w-full h-screen bg-[#d5d5d5] justify-center items-center"> 
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>

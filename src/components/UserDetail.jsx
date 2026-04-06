@@ -20,7 +20,7 @@ function UserDetail() {
   return (
     <div className="w-[80%] grid grid-cols-1 justify-center items-center mx-auto">
       <div className="w-full h-[40px] mt-[30px]">
-        <button className="bg-black text-white py-1 px-[14px] outline-0 border-0 rounded-[10px] cursor-pointer text-[14px]"
+        <button className="btn_primary"
           onClick={() => {
             navigate("/");
           }}
